@@ -1,0 +1,167 @@
+/* ===================== GLOBAL STYLES ===================== */
+:root {
+  --font-primary: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --color-bg: #0d0d0d;
+  --color-accent: #d63384;
+  --color-text: #f1f1f1;
+  --fs-xl: 1.5rem;
+  --fs-xxxl: 3rem;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  color: var(--color-text);
+  background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* ===================== HERO SECTION ===================== */
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  min-height: 80vh;
+}
+
+.hero-bg-media {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(214, 51, 132, 0.15), transparent 70%);
+  z-index: 0;
+}
+
+.bg-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero-text-container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-text-container h1 {
+  font-size: calc(var(--fs-xxxl) * 1.2);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  letter-spacing: -1px;
+}
+
+.hero-text-container h1 span {
+  color: var(--color-accent);
+}
+
+.hero-text-container h2 {
+  font-size: var(--fs-xl);
+  font-weight: 400;
+  opacity: 0.9;
+  margin-bottom: 1rem;
+}
+
+.intro-text {
+  font-size: 1rem;
+  color: #ccc;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ===================== PROJECTS ===================== */
+.projects {
+  text-align: center;
+  padding: 40px 10%;       /* reduced top padding */
+  margin-top: -40px;       /* moved section closer to hero */
+}
+
+.projects h3 {
+  font-size: 1.8rem;
+  margin-bottom: 2.5rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+/* Grid layout for links */
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.project-grid a {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 1.05rem;
+  letter-spacing: 0.5px;
+  padding: 12px 22px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.project-grid a:hover {
+  background: var(--color-accent);
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(214, 51, 132, 0.25);
+}
+
+/* ===================== FOOTER ===================== */
+footer {
+  text-align: center;
+  padding: 30px 10%;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  opacity: 0.8;
+}
+
+/* ===================== ANIMATIONS ===================== */
+.slide-in-top {
+  animation: slide-in-top 0.8s cubic-bezier(0.25,0.46,0.45,0.94) both;
+}
+
+@keyframes slide-in-top {
+  0% { transform: translateY(-50px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/* ===================== RESPONSIVE ===================== */
+@media (max-width: 768px) {
+  .hero-text-container h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text-container h2 {
+    font-size: 1.2rem;
+  }
+
+  .projects {
+    padding: 40px 5%; /* smaller padding for mobile */
+    margin-top: -30px;
+  }
+
+  .project-grid {
+    flex-direction: column;
+  }
+
+  .project-grid a {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
