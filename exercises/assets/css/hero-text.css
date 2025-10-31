@@ -1,0 +1,167 @@
+/*  ============= WEB BROWSER RESETS ============ */
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  html {
+    height: 100%;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
+  }
+  
+  body {
+    line-height: 1.5;
+    min-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: var(--global-font);
+  }
+  
+  @media (max-width: 767px) {
+    body { text-rendering: optimizeSpeed; }
+  }
+  @media (min-width: 768px) {
+    body { text-rendering: optimizeLegibility; }
+  }
+  
+  nav, header, section, footer {
+    width: 100%;
+  }
+  
+  nav *:last-child,
+  header *:last-child,
+  section *:last-child,
+  footer *:last-child {
+    margin-bottom: 0;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  h1, h2, h3, h4, p, li {
+    word-break: break-word;
+    hyphens: auto;
+  }
+  
+  /* ============ CUSTOM PROPERTIES ============ */
+  :root {
+    /* ==== Color variables ==== */
+    --black-000: #000000;
+    --white-000: #ffffff;
+    --trans-000: transparent;
+  
+    /* ==== Palette samples (mantive todas suas cores) ==== */
+    --slate-050: #ECEFF1;
+    --slate-100: #CFD8DC;
+    --slate-200: #B0BEC5;
+    --slate-300: #90A4AE;
+    --slate-400: #78909C;
+    --slate-500: #607D8B;
+    --slate-600: #546E7A;
+    --slate-700: #455A64;
+    --slate-800: #37474F;
+    --slate-900: #263238;
+  
+    /* ... (demais variáveis de cor mantidas) ... */
+  
+    /* ==== Fonts ==== */
+    --font-sans: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
+    --font-serif: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+    --font-monospace: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  
+    --global-font: var(--font-sans);
+  
+    /* ==== Fluid font sizes ==== */
+    --fs-sm: clamp(0.8rem, 0.17vi + 0.76rem, 0.89rem);
+    --fs-base: clamp(1rem, 0.34vi + 0.91rem, 1.19rem);
+    --fs-md: clamp(1.25rem, 0.61vi + 1.1rem, 1.58rem);
+    --fs-lg: clamp(1.56rem, 1vi + 1.31rem, 2.11rem);
+    --fs-xl: clamp(1.95rem, 1.56vi + 1.56rem, 2.81rem);
+    --fs-xxl: clamp(2.44rem, 2.38vi + 1.85rem, 3.75rem);
+    --fs-xxxl: clamp(3.05rem, 3.54vi + 2.17rem, 5rem);
+  }
+  
+  /* ============= CSS FOR HERO BLOCK ============= */
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20% 4% 20%;
+    text-align: center;
+    background-color: gray;
+    background-image: linear-gradient(90deg, #dfe0e8, #ec81da);
+  }
+  
+  @media (min-width: 768px) {
+    header { min-height: 80vh; }
+  }
+  @media (max-width: 767px) {
+    header { min-height: 500px; }
+  }
+  
+  .hero-text-container h1,
+  .hero-text-container h2 {
+    line-height: 1.2;
+    color: #fff;
+    text-shadow: 2px 2px rgb(0, 0, 0)
+  }
+  
+  .hero-text-container h1 {
+    margin-bottom: 24px;
+    font-size: calc(var(--fs-xxxl) * 1.5);
+    letter-spacing: -4px;
+  }
+  
+  .hero-text-container h2 {
+    font-weight: normal;
+    font-size: var(--fs-xl);
+    text-transform: uppercase;
+  }
+  
+  /* ======== ANIMATIONS ======== */
+  .slide-in-top {
+    animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  
+  @keyframes slide-in-top {
+    0% {
+      transform: translateY(-1000px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .slide-in-left {
+    animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  
+  @keyframes slide-in-left {
+    0% {
+      transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  

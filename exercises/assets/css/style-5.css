@@ -1,0 +1,166 @@
+/* ===================== GLOBAL RESET ===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html { scroll-behavior: smooth; }
+img { width: 100%; height: auto; display: block; }
+
+/* ===================== BASE STYLES ===================== */
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  background: linear-gradient(135deg, #003e29, #004d2c);
+  color: #f1f1f1;
+}
+
+/* ===================== NAVIGATION ===================== */
+.navbar {
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 1rem 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  color: #b6e388;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #dcdcdc;
+  text-decoration: none;
+  font-weight: 400;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* ===================== HEADER ===================== */
+header {
+  text-align: center;
+  padding: 80px 10% 40px;
+}
+
+header h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 3rem;
+  letter-spacing: -1px;
+  color: #b6e388;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+header p, .index-links p {
+  color: #d9ffd9;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+header a {
+  color: #b6e388;
+  text-decoration: none;
+  transition: 0.3s;
+}
+header a:hover { color: #ffffff; }
+
+/* ===================== CONTENT ===================== */
+section {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 40px 10%;
+  max-width: 1000px;
+  margin: 40px auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+section h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.8rem;
+  color: #b6e388;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+section p {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #f1f1f1;
+  line-height: 1.7;
+}
+
+section img {
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+  margin: 24px auto;
+}
+
+/* Highlight text (visitor stats) */
+.highlight-text {
+  background-color: #1a3f1f;
+  color: #b6e388;
+  font-weight: 600;
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+/* ===================== LINKS ===================== */
+section a {
+  color: #b6e388;
+  transition: color 0.3s;
+}
+
+section a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* ===================== FOOTER ===================== */
+footer {
+  text-align: center;
+  padding: 40px 10%;
+  background: #002b1d;
+  color: #ccc;
+}
+
+footer a.back-home {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #b6e388;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+footer a.back-home:hover {
+  color: #ffffff;
+}
