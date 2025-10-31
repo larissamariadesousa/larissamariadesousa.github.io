@@ -34,6 +34,7 @@ header {
   min-height: 80vh;
 }
 
+<<<<<<< HEAD
 /* 🎥 VIDEO DE FUNDO */
 .hero-bg-media {
   position: absolute;
@@ -54,6 +55,15 @@ header {
 }
 
 /* Camada de gradiente suave */
+=======
+.hero-bg-media {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(214, 51, 132, 0.15), transparent 70%);
+  z-index: 0;
+}
+
+>>>>>>> 1e1489663f5d0abd629002bfc7fbf9eaed2c1a8d
 .bg-overlay {
   position: absolute;
   inset: 0;
@@ -61,7 +71,10 @@ header {
   z-index: 1;
 }
 
+<<<<<<< HEAD
 /* Container do texto principal */
+=======
+>>>>>>> 1e1489663f5d0abd629002bfc7fbf9eaed2c1a8d
 .hero-text-container {
   position: relative;
   z-index: 2;
@@ -95,8 +108,13 @@ header {
 /* ===================== PROJECTS ===================== */
 .projects {
   text-align: center;
+<<<<<<< HEAD
   padding: 40px 10%;
   margin-top: -40px; /* move a seção mais próxima ao header */
+=======
+  padding: 40px 10%;       /* reduced top padding */
+  margin-top: -40px;       /* moved section closer to hero */
+>>>>>>> 1e1489663f5d0abd629002bfc7fbf9eaed2c1a8d
 }
 
 .projects h3 {
@@ -165,7 +183,11 @@ footer {
   }
 
   .projects {
+<<<<<<< HEAD
     padding: 40px 5%;
+=======
+    padding: 40px 5%; /* smaller padding for mobile */
+>>>>>>> 1e1489663f5d0abd629002bfc7fbf9eaed2c1a8d
     margin-top: -30px;
   }
 
