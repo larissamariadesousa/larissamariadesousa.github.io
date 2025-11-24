@@ -1,2 +1,111 @@
-/* Add your custom CSS here */
+/* GENERAL TYPOGRAPHY */
+body { 
+    font-family: 'Outfit', sans-serif;
+    line-height: 1.6;
+}
 
+/* Smooth, elegant headings */
+h1, h2, h3 {
+    font-weight: 400;
+    margin-bottom: 0.6em;
+}
+
+/* Increase readability in all paragraphs */
+p {
+    font-size: 1.05rem;
+}
+
+/* ------------------------------ */
+/* TEXT COLOR FOR DARK SECTIONS  */
+/* AUTOMATICALLY MAKES TEXT WHITE */
+/* ------------------------------ */
+
+/* FORCE WHITE TEXT ON DARK SECTIONS */
+.theme-dark,
+.theme-dark h1,
+.theme-dark h2,
+.theme-dark h3,
+.theme-dark p,
+.theme-dark li,
+.theme-dark span,
+.theme-dark a,
+.section-selector-1.theme-dark,
+.section-selector-2.theme-dark,
+.section-selector-3.theme-dark,
+.section-selector-4.theme-dark,
+.section-selector-1 h2,
+.section-selector-1 p,
+.section-selector-2 h2,
+.section-selector-2 p,
+.section-selector-3 h2,
+.section-selector-3 p,
+.section-selector-4 h2,
+.section-selector-4 p {
+    color: #ffffff !important;
+}
+
+/* Fix buttons inside dark sections */
+.theme-dark .btn-outline span {
+    color: #ffffff !important;
+}
+
+/* ------------------------------ */
+/* BACKGROUND COLORS (Clean look) */
+/* ------------------------------ */
+
+.section-selector-1 { 
+    background-color: var(--trend-700); 
+}
+
+.section-selector-2 { 
+    background-color: var(--trend-800); 
+}
+
+.section-selector-3 { 
+    background-color: var(--trend-700); 
+}
+
+.section-selector-4 { 
+    background-color: var(--trend-800); 
+}
+
+/* ------------------------------ */
+/* ICON STYLE (clean & modern)    */
+/* ------------------------------ */
+
+figure.icon i {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--white-000);
+    opacity: 0.85;
+    transition: 0.3s ease;
+}
+
+figure.icon i:hover {
+    opacity: 1;
+    transform: scale(1.12);
+}
+
+/* ------------------------------ */
+/* SPACING - Cleaner layout       */
+/* ------------------------------ */
+
+section {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+}
+
+.flex-cols-3 .col-3 {
+    padding: 1rem 1.2rem;
+}
+
+/* video responsive */
+iframe {
+    max-width: 100%;
+    border-radius: 6px;
+}
+
+/* better alignment in two-column sections */
+.col-text p {
+    margin-bottom: 1rem;
+}
